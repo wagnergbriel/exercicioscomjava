@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 public class Idade { 
     public static void main(String[] args){
+        /*
+            Informar idade em anos, meses e dias e retornar a resposta expressa
+            em dias.
+         */
         Scanner scanner = new Scanner(System.in);
         System.out.println("Escreva sua idade em anos, meses e dias:");
         
@@ -17,6 +21,6 @@ public class Idade {
         dia = scanner.nextInt();
         
         resultadoIdade = (356 * ano) + (30 * mes) + dia;
-        System.out.println("A idade expressa em dias é: " + resultadoIdade);
+        System.out.printf("A idade expressa em dias é: %d \n", resultadoIdade);
      }
 }
