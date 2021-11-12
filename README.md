@@ -2,7 +2,7 @@
 
 Reaproveitando os exercícios da página Python Brasil utilizando a linguagem Java para colocar em prática conceitos de programação de acorco com cada problema proposto.
 
-###### :bookmark_tabs: Lista de conceitos que serão desenvolvidos:
+#### :bookmark_tabs: Lista de conceitos que serão desenvolvidos:
 
 1. *Estrutura Sequencial*
 2. *Estrutura de Decisão*
