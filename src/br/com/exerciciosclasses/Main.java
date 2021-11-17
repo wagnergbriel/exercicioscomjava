@@ -2,10 +2,11 @@ package br.com.exerciciosclasses;
 
 public class Main {
     public static void main(String[] args) {
-        Pessoa pessoa = new Pessoa("Wagner", 30, 60, 1.86f);
-        System.out.println(pessoa.envelhecer());
-        pessoa.emagrecer(1f);
-        System.out.println(pessoa.getAltura());
-        System.out.println(pessoa.getPeso());
+        ContaCorrente conta = new ContaCorrente(001, "Wagner", 200f);
+        conta.deposito(50f);
+        conta.saque(200f);
+        conta.saque(45f);
+        conta.deposito(1000f);
+        conta.saque(600f);
     }
 }
