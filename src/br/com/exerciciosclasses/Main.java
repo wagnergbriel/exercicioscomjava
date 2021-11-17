@@ -2,12 +2,10 @@ package br.com.exerciciosclasses;
 
 public class Main {
     public static void main(String[] args) {
-        Quadrado quadrado = new Quadrado(6);
-        System.out.println(quadrado.retornarValorDoLado());
-        System.out.println(quadrado.calcularArea());
-        quadrado.mudarValorDoLado(32);
-        System.out.println(quadrado.retornarValorDoLado());
-        System.out.println(quadrado.calcularArea());
-
+        Pessoa pessoa = new Pessoa("Wagner", 30, 60, 1.86f);
+        System.out.println(pessoa.envelhecer());
+        pessoa.emagrecer(1f);
+        System.out.println(pessoa.getAltura());
+        System.out.println(pessoa.getPeso());
     }
 }
