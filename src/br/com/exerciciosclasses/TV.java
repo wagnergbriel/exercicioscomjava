@@ -14,7 +14,7 @@ public class TV {
             System.out.println("Ligando TV!");
             setLigado(true);
         } else {
-            System.out.println("TV está ligada!");
+            System.out.println("TV não está ligada!");
         }
     }
 
@@ -25,6 +25,18 @@ public class TV {
         } else {
             System.out.println("Tv já está desligada!");
         }
+    }
+
+    public int aumentarVolume() {
+        return volume++;
+    }
+
+    public int abaixarVolume() {
+        return volume--;
+    }
+
+    public String toString() {
+        return "Status da Tv: " + getLigado() + "\nVolume: " + getVolume();
     }
 
     public boolean getLigado() {
