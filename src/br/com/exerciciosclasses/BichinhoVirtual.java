@@ -21,21 +21,19 @@ public class BichinhoVirtual {
     }
 
     public int verificarFome() {
-        setFome(getFome() - 1);
-        return getFome();
+        return fome--;
     }
 
     public int verificarSaude() {
-        setFome(getSaude() - 1);
-        return getFome();
+        return saude--;
     }
 
     public int retornarIdade() {
-        return getIdade();
+        return idade;
     }
 
     public String verificarHumor() {
-        int humor = (getFome() + getSaude()) / 2;
+        int humor = (verificarFome() + verificarSaude()) / 2;
         return "Humor: " + humor;
     }
 

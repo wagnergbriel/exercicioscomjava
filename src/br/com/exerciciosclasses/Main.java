@@ -5,5 +5,9 @@ public class Main {
         BichinhoVirtual bv = new BichinhoVirtual("Pou", 1);
         System.out.println(bv.alterarNome("Tótó"));
         System.out.println(bv.verificarFome());
+        System.out.println(bv.verificarSaude());
+        System.out.println(bv.verificarSaude());
+        System.out.println(bv.verificarSaude());
+        System.out.println(bv.verificarHumor());
     }
 }
