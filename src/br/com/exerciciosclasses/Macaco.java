@@ -9,9 +9,8 @@ public class Macaco {
     private List<String> estomago = new ArrayList<>();
 
     public Macaco(String nome) {
-        this.setNome(nome);
-        this.bucho = "Vazio";
-
+        this.nome = nome;
+        this.bucho = "vazio";
     }
 
     public void comer(String comida) {
@@ -19,20 +18,15 @@ public class Macaco {
     }
 
     public void verBucho() {
-        int qtdDeComida = 0;
-        for (int i = 0; i < estomago.size(); i++) {
-            qtdDeComida += 1;
-        }
-
-        if (qtdDeComida > 0 && qtdDeComida <= 3) {
-            setBucho("Satisfeito");
+        if (estomago.size() > 0 && estomago.size() <= 3) {
+            setBucho("satisfeito");
             System.out.println(
-                    "O macaco " + nome + " comeu " + String.join(", ", estomago) + " e o seu bucho está " + getBucho());
+                    "O macaco " + nome + " comeu " + String.join(", ", estomago) + " e o seu bucho está " + bucho);
 
-        } else if (qtdDeComida > 3) {
-            setBucho("Cheio");
+        } else if (estomago.size() > 3) {
+            setBucho("cheio");
             System.out.println(
-                    "O macaco " + nome + " comeu " + String.join(", ", estomago) + " e o seu bucho está " + getBucho());
+                    "O macaco " + nome + " comeu " + String.join(", ", estomago) + " e o seu bucho está " + bucho);
         }
     }
 
