@@ -26,11 +26,11 @@ public class Macaco {
 
         if (qtdDeComida > 0 && qtdDeComida <= 3) {
             setBucho("Satisfeito");
-            System.out.println("O macaco comeu " + estomago + " e o seu bucho está " + getBucho());
+            System.out.println("O macaco comeu " + String.join(", ", estomago) + " e o seu bucho está " + getBucho());
 
         } else if (qtdDeComida > 3) {
             setBucho("Cheio");
-            System.out.println("O macaco comeu " + estomago + " e o seu bucho está " + getBucho());
+            System.out.println("O macaco comeu " + String.join(", ", estomago) + " e o seu bucho está " + getBucho());
         }
     }
 
