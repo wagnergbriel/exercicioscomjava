@@ -9,6 +9,10 @@ public class Ponto {
         this.y = y;
     }
 
+    public void exibirCoordenadas() {
+        System.out.println("X: " + x + "\nY: " + y);
+    }
+
     public float getX() {
         return x;
     }
