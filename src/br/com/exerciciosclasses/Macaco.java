@@ -27,13 +27,15 @@ public class Macaco {
             setBucho("cheio");
             System.out.println("O(A) macaco(a) " + nome + " comeu " + String.join(", ", estomago)
                     + " e o seu bucho está " + bucho);
+        } else {
+            System.out.println("O estomago do(a) " + nome + " está vazio");
         }
     }
 
     public void digerir() {
         int comida = estomago.size() - 1;
-        if (comida == 0) {
-            System.out.println("O estomago do(a) " + nome + " está vazio");
+        if (comida == -1) {
+            System.out.println("O estomago do(a) " + nome + " está vazio, não tem o que digerir");
         } else {
             System.out.println("O(A) " + nome + " digeriu um(a) " + estomago.get(comida));
             estomago.remove(comida);

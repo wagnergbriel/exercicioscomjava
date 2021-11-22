@@ -8,5 +8,8 @@ public class Main {
         mico.verBucho();
         mico.digerir();
         mico.verBucho();
+        mico.digerir();
+        mico.verBucho();
+        mico.digerir();
     }
 }
