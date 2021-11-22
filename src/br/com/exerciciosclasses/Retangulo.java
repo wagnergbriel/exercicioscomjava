@@ -9,6 +9,8 @@ public class Retangulo {
         this.setAltura(altura);
     }
 
+    // metodo para encontrar o centro de um retangulo
+
     public float getAltura() {
         return altura;
     }
