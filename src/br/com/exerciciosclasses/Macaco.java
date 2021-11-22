@@ -20,17 +20,26 @@ public class Macaco {
     public void verBucho() {
         if (estomago.size() > 0 && estomago.size() <= 3) {
             setBucho("satisfeito");
-            System.out.println(
-                    "O macaco " + nome + " comeu " + String.join(", ", estomago) + " e o seu bucho está " + bucho);
+            System.out.println("O(A) macaco(a) " + nome + " comeu " + String.join(", ", estomago)
+                    + " e o seu bucho está " + bucho);
 
         } else if (estomago.size() > 3) {
             setBucho("cheio");
-            System.out.println(
-                    "O macaco " + nome + " comeu " + String.join(", ", estomago) + " e o seu bucho está " + bucho);
+            System.out.println("O(A) macaco(a) " + nome + " comeu " + String.join(", ", estomago)
+                    + " e o seu bucho está " + bucho);
         }
     }
 
-    // Implementar metodo digerir()
+    public void digerir() {
+        int comida = estomago.size() - 1;
+        if (comida == 0) {
+            System.out.println("O estomago do(a) " + nome + " está vazio");
+        } else {
+            System.out.println("O(A) " + nome + " digeriu um(a) " + estomago.get(comida));
+            estomago.remove(comida);
+        }
+
+    }
 
     public String getBucho() {
         return bucho;

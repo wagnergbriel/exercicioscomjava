@@ -6,5 +6,7 @@ public class Main {
         mico.comer("Banana");
         mico.comer("Maça");
         mico.verBucho();
+        mico.digerir();
+        mico.verBucho();
     }
 }
