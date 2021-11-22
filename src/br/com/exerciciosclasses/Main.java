@@ -2,14 +2,11 @@ package br.com.exerciciosclasses;
 
 public class Main {
     public static void main(String[] args) {
-        Macaco mico = new Macaco("Pretinho");
-        mico.comer("Banana");
-        mico.comer("Maça");
-        mico.verBucho();
-        mico.digerir();
-        mico.verBucho();
-        mico.digerir();
-        mico.verBucho();
-        mico.digerir();
+        Ponto a = new Ponto(2, 3);
+        Ponto b = new Ponto(9, 1);
+        a.exibirCoordenadas();
+        b.exibirCoordenadas();
+        Retangulo x = new Retangulo(a, b);
+        x.calcularCentroDoRetangulo();
     }
 }
