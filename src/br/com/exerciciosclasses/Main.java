@@ -2,9 +2,12 @@ package br.com.exerciciosclasses;
 
 public class Main {
     public static void main(String[] args) {
-        BombaDeCombustivel gasolina = new BombaDeCombustivel("gasolina", 6, 200);
-        gasolina.abastecerPorLitro(20);
-        gasolina.abastecerPorValor(120);
-
+        Carro carro = new Carro(10, 0);
+        carro.obterGasolina();
+        carro.adicionarGasolina(100);
+        carro.andar(50);
+        carro.obterGasolina();
+        carro.andar(250);
+        carro.obterGasolina();
     }
 }
